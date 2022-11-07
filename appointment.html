@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apppointment page</title>
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body onload="loader()">
+    <!-- <div id="loading"></div> -->
+    <a href="#heads"> <span class="arrow" title="click to go to top"> <i
+                class="fas fa-arrow-circle-up fa-3x"></i></span></a>
+    <header id="head">
+        <div class="container">
+            <div>
+                <p>In case of Emergency</p>
+                <span> <i class="fas fa-phone"></i>+234 000 888 8888</span>
+                <span><i class="fas fa-envelope"></i> Email Address</span>
+            </div>
+            <div class="icons" data-aos="flip-left" data-aos-duration="1000">
+                <span class="icon" data-aos="fade-up"> <i class="fab fa-facebook fa-2x"></i></span>
+                <span class="icon" data-aos="fade-up"> <i class="fab fa-whatsapp fa-2x"></i></span>
+                <span class="icon" data-aos="fade-left"> <i class="fab fa-linkedin fa-2x"></i></span>
+                <span class="icon" data-aos="fade-bottom"> <i class="fab fa-twitter fa-2x"></i></span>
+                <span class="icon" data-aos="fade-up"> <i class="fab fa-instagram fa-2x"></i></span>
+
+            </div>
+
+
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <div>
+                    <a href="index.html">   <img src="./Assets/logo.png" alt=""></a>
+                </div>
+            </div>
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="ourteam.html">
+                    <li>Our Team</li>
+                </a>
+                <a href="services.html">
+                    <li>Services</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="gallery.html">
+                    <li>Gallery</li>
+                </a>
+                <a href="appointment.html">
+                    <li>Appointment</li>
+                </a>
+            </ul>
+            <span id="bars" class="bars"> <i class="fas fa-bars fa-2x"></i></span>
+            <span id="times" class="bars"> <i class="fas fa-times fa-2x"></i></span>
+
+        </div>
+    </nav>
+
+    <header class="app" id="heads">
+        <i class="fas fa-calendar-day" id="calendar"></i>
+        <a href="index.html">Home</a>
+        <button type="button" disabled>APPOINTMENTS</button>
+    </header>
+
+    <section id="sec1">
+        <form action="https://formspree.io/f/mdobvqre" method="POST">
+            <main>
+                <div class="appform">
+                    <div class="selectdepartment">
+                        <h2>Appointment Form</h2>
+                        <p>Select a department</p>
+                        <select id="department" name="department">
+                            <option value="Optamology" selected>Optamology</option>
+                            <option value="Gynaceology">Gynaceology</option>
+                            <option value="Blood Bank">Blood Bank</option>
+                            <option value="Dental Care">Dental Care</option>
+                            <option value="Oncology">Oncology</option>
+                        </select><br>
+                        <label for="Firstname">Your First name (required)</label><br>
+                        <input type="text" name="fname" required>
+
+                        <label for="Lasttname">Your Last name (required)</label><br>
+                        <input type="text" name="lname" required>
+
+
+                        <label for="DOB">Date of Birth (required)</label><br>
+                        <input type="date" name="dob" required>
+
+                        <label for="Message">Your Message (required)</label><br>
+                        <textarea name="message" id="message"></textarea>
+
+                    </div>
+
+                    <div class="sex">
+                        <label for="Email">Your Email (required)</label><br>
+                        <input type="email" name="email" required>
+
+                        <label for="Sex">Sex (required)</label><br>
+                        <div class="radio">
+                            <input type="radio" name="sex" value="male" required> <span>Male</span>
+                            <input type="radio" name="sex" value="female" required> <span>Female</span>
+                            <input type="radio" name="sex" value="child" required> <span>Child</span>
+                        </div>
+
+                        <label for="Phone">Your Phone number (required)</label><br>
+                        <input type="tel" name="phone" required>
+
+                        <button type="submit">SUBMIT</button>
+                    </div>
+                </div>
+                </div>
+                <div class="book">
+                    <h2>Book an Appointment</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas quae repudiandae tempora
+                        similique itaque</p>
+
+                    <div class="contact">
+                        <div class="first">
+                            <i class="fas fa-phone call"></i>
+                        </div>
+                        <div class="content">
+                            Phone: +234 00 111 0000
+                        </div>
+                    </div>
+
+                    <div class="contact">
+                        <div class="first">
+                            <i class=" fas fa-envelope-open call"></i>
+                        </div>
+                        <div class="content">
+                            Email:<a href="mailto:okunolataiwoadekunle@yahoo.com"> youremail@yahoo.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact">
+                        <div class="first">
+                            <i class=" fas fa-pen call"></i>
+                        </div>
+                        <div class="content">
+                            Online Form: <a href="#sec1">Fill in this form</a>
+                        </div>
+                    </div>
+                    <h3>After Booking</h3>
+                    <p>Hi fill in the details and submit the form. We will contact you via phone or email and fix a time
+                        schedule.</p>
+                    <p class="p2"> These are the thing you need to carry with you when you come in for the appointment
+                        wit the doctor.</p>
+                    <div class="requires">
+                        <i class="fas fa-angle-right angle"></i> <span>Previous Medical History</span><br>
+                        <i class="fas fa-angle-right angle"></i> <span>Enlisted Previous Numbers</span><br>
+                        <i class="fas fa-angle-right angle"></i> <span>Discussion with Parents</span><br>
+                        <i class="fas fa-angle-right angle"></i> <span>Make sure you are feeling good</span><br>
+                        <i class="fas fa-angle-right angle"></i> <span>Have someone with you</span>
+                    </div>
+
+                    <h3>Have a Healthy Life!</h3>
+                    <div class="lastimage">
+                        <img src="./Assets/pexels-thirdman-5327584.jpg" alt="img">
+                    </div>
+                </div>
+            </main>
+        </form>
+
+    </section>
+    <footer>
+        <div class="container">
+            <div>
+                <div class="logo">
+                    <a href="./appointment.html"> <img src="./Assets/logo.png" alt=""></a>
+
+                    <!-- <h1>Hospital</h1> -->
+                </div>
+                <p><i class="fas fa-envelope"></i> Email Address</p>
+                <p><i class="fas fa-phone"></i> 09086836353</p>
+            </div>
+            <div>
+                <h1>Location</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusantium tempora maiores
+                    assumenda omnis odio facere hic harum soluta recusandae, labore dicta, error expedita cum eos
+                    aperiam magnam placeat asperiores.</p>
+            </div>
+            <div>
+                <h1>Social handle</h1>
+                <div class="icons"> <span class="icon"> <i class="fab fa-facebook fa-2x"></i></span>
+                    <span class="icon"> <i class="fab fa-whatsapp fa-2x"></i></span>
+                    <span class="icon"> <i class="fab fa-linkedin fa-2x"></i></span>
+                    <span class="icon"> <i class="fab fa-twitter fa-2x"></i></span>
+                    <span class="icon"> <i class="fab fa-instagram fa-2x"></i></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="dfoot">
+            <p class="copy">All rights reserved Copy right &copy <span id="footer-date"> </span>&nbsp Klemweb &nbsp
+                Designed by T&K team.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./all.min.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1000
+
+        });
+        var bar = document.getElementById('bars');
+        var time = document.getElementById('times');
+        var ul = document.querySelector('ul');
+
+        bar.onclick = function () {
+            bar.style.display = "none";
+            time.style.display = "block";
+            ul.classList.add('add');
+        }
+
+        time.onclick = function () {
+            time.style.display = "none";
+            bar.style.display = "block";
+            ul.classList.remove('add');
+        }
+
+        var year = new Date().getFullYear();
+
+        document.querySelector('#footer-date').innerHTML = year;
+        window.addEventListener("load", function () {
+            preloader.style.visibility = "hidden";
+        });
+    </script>
+
+    <script src="./all.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+#loading{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    /* top: 0; */
+    /* left: 0; */
+    background: url(./Assets/1_CsJ05WEGfunYMLGfsT2sXA.gif) white;
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+#sec1{
+    margin-top: 150px;
+    background-color:aliceblue;
+}
+.app{
+    background-image: url("./Assets/pexels-pixabay-247786.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+.app #calendar{
+    font-size: 30px;
+    color: white;
+}
+.app a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin:3rem 5rem;
+}
+.app #arrow{
+    position: absolute;
+    left: 15%;
+    top:6.5%;
+    color: white;
+    font-size: 13px;
+}
+.app a:hover{
+    color:#39489e;
+    font-size: 21px;
+    transition: all 1s ease;
+}
+.app #arrow:hover{
+    font-size:14px ;
+}
+.app button{
+    color: white;
+    background-color:#39489e;
+    width: 200px;
+    text-transform: uppercase;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-left: -30px;
+}
+
+#sec2{
+    text-align: center;
+    background-color:aliceblue;
+    padding: 2rem;
+    height: fit-content;
+}
+#sec2 p{
+font-size: 20px;
+}
+.imgcontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.image{
+    width: 23%;
+    height: 70vh;
+    position: relative;
+    margin-top: 2rem;
+    padding-bottom: 0;
+}
+.over{
+    position: absolute;
+    top: 70%;
+    justify-content: center;
+    align-items: center;
+    left: 10%;
+    border-radius: 40px;
+    border: 2px solid white;
+    height: 40px;
+    width: 75%;
+    transform: scaleY(0);
+}
+.over span{
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.over #icon{
+    align-items: center;
+    color:white;
+    margin-top: .6rem;
+    margin-left: 10px;
+    font-size:18px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.over #icon:hover{
+    color:#39489e;
+    font-size: 20px;
+    transition: all 1s ease;
+}
+.over a{
+    text-decoration: none;
+}
+.image .content{
+    background-color: white;
+    border-radius: 2px;
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    padding:0;
+    color: gray;
+}
+.image .content p{
+    color:#39489e;
+    font-weight: bold;
+    font-size: 18px;
+}
+.image .content h3{
+    font-size: 20px;
+}
+.image:hover{
+    background-color:rgb(206, 232, 255);
+    transition: all 1s ease;
+}
+.image:hover .over{
+    transform:scale(1);
+    transition: all .5s ease;
+}
+.image img{
+    width: 100%;
+    height: 85%;
+}
+/* @media starts here */
+
+@media screen and (max-width: 992px){
+    .imgcontainer{
+        gap:.5rem;
+    }
+    .image{
+        width: 32%;
+        height: 65vh;
+        margin-top: 4rem;
+    }
+    .over{
+        width: 90%;
+        left: 3.5%;
+        border: 2px solid rgb(4, 4, 242);
+        transform: scaleY(1);
+    }
+    .over #icon{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .imgcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+        height: 70vh;
+    }
+    .app{
+        height: 4rem;
+    }
+    .app #calendar{
+        font-size: 30px;
+        color: white;
+    }
+    .app a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin:1rem;
+    }
+    .app #arrow{
+        position: absolute;
+        left: 35%;
+        top:7%;
+        color: rgb(10, 10, 215);
+        font-size: 13px;
+    }
+    .app a:hover{
+        color:rgb(14, 173, 226);
+        font-size: 21px;
+        transition: all 1s ease;
+    }
+    .app button{
+        color: white;
+        background-color:#39489e;
+        width: 200px;
+        height: 25px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        margin:.5rem auto;
+    }
+ 
+    
+}
+
+/* ends here*/

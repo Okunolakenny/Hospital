@@ -1,0 +1,151 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+
+
+}
+
+#services {
+    margin: auto;
+    margin-top: -20px;
+    /* background: lightgray; */
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+#loading {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    /* top: 0; */
+    /* left: 0; */
+    background: url(./Assets/1_CsJ05WEGfunYMLGfsT2sXA.gif) white;
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#services .container {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+
+}
+
+.chart {
+    display: block;
+    align-items: center;
+    text-align: center;
+    background-image: url(./Gallery/5efb2235c5f2d.jpg);
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    color: #39489e;
+    line-height: 1.5rem;
+
+}
+
+.chart h1 {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    /* line-height: 1em; */
+    position: relative;
+    transform: translateY(45%);
+    top: 50%;
+    color: #ed2327;
+}
+
+#services .container h2 {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    color: #39489e;
+}
+
+.sdiv {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 50px 0;
+}
+
+.sdiv div {
+    width: 300px;
+    min-height: 350px;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    padding: 1rem 2rem;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 5px 5px #39489e;
+}
+
+.sdiv div img {
+    width: 50%;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.sdiv div p {
+    line-height: 1.5;
+    width: 90%;
+}
+
+.sdiv div:hover {
+    background-color: #81abf4;
+    transition: all 1s ease-in;
+    color: white;
+}
+
+.sdiv div .bold {
+    font-weight: bold;
+    font-size: 20px;
+    color: #39489e;
+}
+
+.sdiv div button {
+    padding: 7px 12px;
+    background-color: #39489e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sdiv div button:hover {
+    background-color: white;
+    color: #39489e;
+    transition: all 1s ease;
+}
+
+@media(max-width:820px) {
+    .sdiv div {
+        width: 70%;
+    }
+}
