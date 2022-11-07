@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apppointment page</title>
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+        <header class="app">
+            <i class="fas fa-calendar-days" id="calendar"></i>
+            <a href="index.html">Home</a>
+            <a href="index.html"><span id="arrow"><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></span></a>
+            <button type="button" disabled>APPOINTMENTS</button>
+        </header>
+
+    <section id="sec1">
+        <form action="" method="POST">
+        <main>
+        <div class="appform">
+            <div class="selectdepartment">
+            <h2>Appointment Form</h2>
+            <p>Select a department</p>
+            <select id="department" name="department">
+                <option value="Optamology" selected>Optamology</option>
+                <option value="Gynaceology">Gynaceology</option>
+                <option value="Blood Bank">Blood Bank</option>
+                <option value="Dentist">Dentist</option>
+                <option value="Oncology">Oncology</option>
+            </select><br>
+                <label for="Firstname">Your First name (required)</label><br>
+                <input type="text" name="fname" required>
+
+                <label for="Lasttname">Your Last name (required)</label><br>
+                    <input type="text" name="lname" required>
+
+                    
+                <label for="DOB">Date of Birth (required)</label><br>
+                <input type="date" name="dob" required>
+
+                <label for="Message">Your Message (required)</label><br>
+                <textarea name="message" id="message"></textarea>
+
+            </div>
+
+            <div class="sex">
+                <label for="Email">Your Email (required)</label><br>
+                <input type="email" name="email" required>
+
+                <label for="Sex">Sex (required)</label><br>
+                <div class="radio">
+                    <input type="radio" name="sex" required> <span>Male</span>
+                    <input type="radio" name="sex" required> <span>Female</span>
+                    <input type="radio" name="sex" required> <span>Child</span>
+                </div>
+
+                <label for="Phone">Your Phone number (required)</label><br>
+                <input type="tel" name="phone" required>
+
+                <button type="submit">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+        <div class="book">
+            <h2>Book an Appointment</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas quae repudiandae tempora similique itaque</p>
+            
+            <div class="contact">
+                <div class="first">
+                    <i class="fas fa-phone-flip call"></i>
+                </div>
+                <div class="content">
+                    Phone: +234 00 111 0000
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="first">
+                    <i class=" fas fa-envelope-open call"></i>
+                </div>
+                <div class="content">
+                    Email:<a href="mailto:okunolataiwoadekunle@yahoo.com"> youremail@yahoo.com</a>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="first">
+                    <i class=" fas fa-pen call"></i>
+                </div>
+                <div class="content">
+                Online Form: <a href="#sec1">Fill in this form</a>
+                </div>
+            </div>
+            <h3>After Booking</h3>
+            <p>Hi fill in the details and submit the form. We will contact you via phone or email and fix a time schedule.</p>
+            <p class="p2"> These are the thing you need to carry with you when you come in for the appointment wit the doctor.</p>
+                <div class="requires">
+            <i class="fas fa-angle-right angle"></i> <span>Previous Medical History</span><br>
+            <i class="fas fa-angle-right angle"></i> <span>Enlisted Previous Numbers</span><br>
+            <i class="fas fa-angle-right angle"></i> <span>Discussion with Parents</span><br>
+            <i class="fas fa-angle-right angle"></i> <span>Make sure you are feeling good</span><br>
+            <i class="fas fa-angle-right angle"></i> <span>Have someone with you</span>
+                </div>
+
+                <h3>Have a Healthy Life!</h3>
+                <div class="lastimage">
+                    <img src="./Assets/pexels-thirdman-5327584.jpg" alt="img">
+                </div>
+        </div>
+    </main>
+</form>
+        
+    </section>
+
+    <script src="./js/all.min.js"></script>
+</body>
+</html>
